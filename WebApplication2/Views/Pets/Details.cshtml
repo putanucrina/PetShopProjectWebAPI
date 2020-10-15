@@ -1,0 +1,51 @@
+﻿@model WebApplication2.Models.Pet
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="title-page">Details</h2>
+
+<div>
+    <h4>PET</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Categorie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Categorie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rasa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rasa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pret)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pret)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AnPrimire)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AnPrimire)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    <button type="button" class="btn btn btn-default">@Html.ActionLink("Edit", "Edit", new { id = Model.Id })</button> |
+    @Html.ActionLink("Back to List", "Index")
+</p>

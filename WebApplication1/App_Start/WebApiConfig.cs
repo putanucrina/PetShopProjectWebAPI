@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Net.Http.Formatting;
 
 namespace WebApplication1
 {
@@ -10,6 +11,7 @@ namespace WebApplication1
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
+            config.EnableCors();
 
             // Web API routes
             config.MapHttpAttributeRoutes();
@@ -19,6 +21,9 @@ namespace WebApplication1
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.Formatters.Clear();
+            config.Formatters.Add(new JsonMediaTypeFormatter());
         }
     }
 }

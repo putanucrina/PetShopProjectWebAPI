@@ -1,0 +1,90 @@
+﻿body {
+    padding-top: 50px;
+    /*padding-bottom: 20px;*/
+    background-image: url(../images/unnamed.jpg);
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color:darkseagreen;
+    height: 100vh;
+    margin-top: -50px;
+    padding-top: 50px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+a{
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+    a:visited {
+        text-decoration: none;
+    }
+    a:active {
+        text-decoration: none;
+    }
+
+.title-page{
+    text-align:center;
+}
+
+.cinereousTable {
+    border: 5px solid #948473;
+    background-color: #e8dbd0;
+    width: 100%;
+    text-align: center;
+}
+
+    .cinereousTable td, table.cinereousTable th {
+        border: 1px solid #948473;
+        padding: 4px 4px;
+    }
+
+@font-face {
+    font-family: 'Mali';
+    src: url(../fonts/Mali-Regular.ttf);
+}
+
+.cinereousTable tbody td {
+    font-size: 16px;
+    font-family: Mali;
+}
+
+.cinereousTable thead {
+    background: #948473;
+    background: -moz-linear-gradient(top, #afa396 0%, #9e9081 66%, #948473 100%);
+    background: -webkit-linear-gradient(top, #afa396 0%, #9e9081 66%, #948473 100%);
+    background: linear-gradient(to bottom, #afa396 0%, #9e9081 66%, #948473 100%);
+}
+
+    .cinereousTable thead th {
+        font-size: 18px;
+        font-weight: bold;
+        color: #F0F0F0;
+        text-align: center;
+        border-left: 2px solid #948473;
+        padding: 20px;
+    }
+
+        .cinereousTable thead th:first-child {
+            border-left: none;
+        }
